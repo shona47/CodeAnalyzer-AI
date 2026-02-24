@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Code Mentor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="index-page">
+
+  <header class="top-bar">
+    <div class="logo">🎓</div>
+    <h1>Mini Code Mentor</h1>
+    <p>Your friendly debugging assistant</p>
+  </header>
+
+  <main class="mentor-container">
+
+    <h2>Paste your code, let's find the bugs! 🐛</h2>
+    <p class="subtitle">
+      I'll check your Python or C code for common errors.
+    </p>
+
+    <!-- ========================= -->
+    <!-- LANGUAGE TOGGLE -->
+    <!-- ========================= -->
+    <div class="language-toggle">
+      <button class="active" data-lang="python">🐍 Python</button>
+      <button data-lang="c">⚙️ C</button>
+    </div>
+
+    <!-- ========================= -->
+    <!-- CODE EDITOR -->
+    <!-- ========================= -->
+    <div class="editor">
+      <div class="editor-header">
+        <span class="file-name">script.py</span>
+      </div>
+
+      <div class="editor-body">
+        <!-- IMPORTANT: ID ADDED -->
+        <textarea 
+          id="codeArea"
+          placeholder="Paste your code here..."
+        ></textarea>
+      </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- PROGRAM INPUT -->
+    <!-- ========================= -->
+    <label for="userInput">Program Input:</label>
+    <textarea 
+      id="userInput"
+      placeholder="Enter input here (if required)..."
+    ></textarea>
+
+    <!-- ========================= -->
+    <!-- ANALYZE BUTTON -->
+    <!-- ========================= -->
+    <button class="analyze-btn">
+      Analyze My Code →
+    </button>
+
+    <!-- ========================= -->
+    <!-- RESULT AREA -->
+    <!-- ========================= -->
+    <div class="result"></div>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
